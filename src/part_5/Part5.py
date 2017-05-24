@@ -46,7 +46,7 @@ class ScrappyKNN():
         # Distance from test point to first training point
         best_dist = euc(row, self.X_train[0])  # Shortest distance found so far
         best_index = 0  # index of closest training point
-        for i in xrange(1, len(self.X_train)):  # Iterate over all other training points
+        for i in range(1, len(self.X_train)):  # Iterate over all other training points
             dist = euc(row, self.X_train[i])
             if dist < best_dist:  # Found closer, update
                 best_dist = dist
